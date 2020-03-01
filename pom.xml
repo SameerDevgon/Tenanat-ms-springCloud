@@ -9,7 +9,7 @@
 	
 	
   <groupId>com.sapient</groupId>
-  <artifactId>TenantService</artifactId>
+  <artifactId>ts</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
 <properties>
@@ -37,12 +37,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
+		<!-- 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
-		
+		 -->
 	<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client -->
 <dependency>
     <groupId>org.springframework.cloud</groupId>
@@ -59,6 +59,12 @@
         	<artifactId>kubernetes-spring-starter</artifactId>
         	 <version>0.9.9</version>
         </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-kubernetes-ribbon</artifactId>
+        </dependency>
+        
 			<dependency>
 <groupId>io.springfox</groupId>
 <artifactId>springfox-swagger2</artifactId>
