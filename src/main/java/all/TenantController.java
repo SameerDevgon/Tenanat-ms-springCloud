@@ -29,6 +29,7 @@ public class TenantController {
 		template.delete("http://Vserver-service/tenant/{id}/deleteVserver/", id);
 		
 		service.deleteTenant(id);;
+		
 	}
 	
 	
